@@ -109,190 +109,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:background="@color/white"
-                android:padding="16dp"
+                android:paddingTop="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-                <ImageView
-                    android:id="@+id/iv_city"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/city"
-                    app:layout_constraintEnd_toStartOf="@+id/iv_suv"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_kategori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="CITY"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/iv_city"
-                    app:layout_constraintStart_toStartOf="@+id/iv_city"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_city" />
-
-                <ImageView
-                    android:id="@+id/iv_suv"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/suv"
-                    app:layout_constraintEnd_toStartOf="@+id/iv_mvp"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/iv_city"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="SUV"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/iv_suv"
-                    app:layout_constraintStart_toStartOf="@+id/iv_suv"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_suv" />
-
-                <ImageView
-                    android:id="@+id/iv_mvp"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/mpv"
-                    app:layout_constraintEnd_toStartOf="@+id/iv_jeep"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/iv_suv"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="MVP"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/iv_mvp"
-                    app:layout_constraintStart_toStartOf="@+id/iv_mvp"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_mvp" />
-
-                <ImageView
-                    android:id="@+id/iv_jeep"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:src="@drawable/jeep"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/iv_mvp"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="JEEP"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/iv_jeep"
-                    app:layout_constraintStart_toStartOf="@+id/iv_jeep"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_jeep" />
-
-                <ImageView
-                    android:id="@+id/iv_classic"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/classic"
-                    app:layout_constraintEnd_toStartOf="@+id/iv_moped"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="CLASSIC"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/iv_classic"
-                    app:layout_constraintStart_toStartOf="@+id/iv_classic"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_classic" />
-
-                <ImageView
-                    android:id="@+id/iv_moped"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/moped"
-                    app:layout_constraintEnd_toStartOf="@+id/iv_scooter"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/iv_classic"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="MOPED"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/iv_moped"
-                    app:layout_constraintStart_toStartOf="@+id/iv_moped"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_moped" />
-
-                <ImageView
-                    android:id="@+id/iv_scooter"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/scooter"
-                    app:layout_constraintEnd_toStartOf="@+id/iv_trail"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/iv_moped"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="SCOOTER"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/iv_scooter"
-                    app:layout_constraintStart_toStartOf="@+id/iv_scooter"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_scooter" />
-
-                <ImageView
-                    android:id="@+id/iv_trail"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/trail"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/iv_scooter"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:text="TRAIL"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/iv_trail"
-                    app:layout_constraintStart_toStartOf="@+id/iv_trail"
-                    app:layout_constraintTop_toBottomOf="@+id/iv_trail" />
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
