@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rentalio</string>
+    <string name="honda_brio">HONDA BRIO</string>
+    <string name="_4_seats">4 SEATS</string>
+    <string name="_2010_2015">2010-2015</string>
+    <string name="driver_service">DRIVER SERVICE</string>
+    <string name="transmission">TRANSMISSION</string>
+    <string name="without_ndriver">Without\nDriver</string>
+    <string name="with_ndriver">With\nDriver</string>
+    <string name="at">AT</string>
+    <string name="automatic_transmission">Automatic Transmission</string>
+    <string name="mt">MT</string>
+    <string name="manual_transmission">Manual Transmission</string>
+    <string name="from">FROM</string>
+    <string name="dd_mm_yyyy">dd-mm-yyyy</string>
+    <string name="to">TO</string>
+    <string name="ngurah_rai_international_airport">Ngurah Rai International Airport</string>
+    <string name="price_estimate">PRICE ESTIMATE</string>
+    <string name="total">TOTAL</string>
+    <string name="rp2_100_000">Rp2.100.000</string>
+    <string name="rp350_000_24_hour_x_7_days">Rp350.000 / 24 HOUR X 7 Days</string>
+    <string name="i_agree_to_all_terms_and_condition_applied">I AGREE TO ALL TERMS AND CONDITION APPLIED</string>
+    <string name="book_now">BOOK NOW</string>
+    <string name="clear">Clear</string>
+    <string name="returnn">RETURN</string>
+    <string name="pick_up">PICK UP</string>
+    <string name="save">SAVE</string>
+
+</resources>
